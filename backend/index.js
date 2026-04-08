@@ -13,7 +13,7 @@ app.use(cors({
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
 }));
-
+app.options('*', cors());
 app.use(express.json());
 
 // test route
