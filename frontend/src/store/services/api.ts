@@ -23,11 +23,11 @@ export const productsApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: `${BASE_URL}/api`,
     prepareHeaders: (headers) => {
-      headers.set("Content-Type", "application/json");
+      // headers.set("Content-Type", "application/json");
       // Add auth token if needed
       // const token = getState().auth.token;
       // if (token) headers.set('Authorization', `Bearer ${token}`);
-      return headers;
+      // return headers;
     },
   }),
   tagTypes: ["Product"], // For cache invalidation
