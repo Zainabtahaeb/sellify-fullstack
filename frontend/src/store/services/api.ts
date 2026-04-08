@@ -17,8 +17,7 @@ export type ProductType = {
   ratings_count: string;
   quantity: number;
 };
-const BASE_URL =
-  Platform.OS === "ios" ? "http://localhost:4000" : "http://10.23.85.222:4000";
+const BASE_URL = "https://sellify-fullstack-1.onrender.com";
 export const productsApi = createApi({
   reducerPath: "productsApi",
   baseQuery: fetchBaseQuery({

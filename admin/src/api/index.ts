@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Optional: create axios instance
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:4000/api",
+  baseURL: "https://sellify-fullstack.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
